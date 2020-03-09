@@ -25,53 +25,94 @@ function TeamPage() {
   // write the const for the team details here...
   const teamMembers = [
     {
-      src: require("assets/img/julie.jpg"),
+      src: require("assets/img/kapil.jpg"),
       altText: "Kapil Birthala",
       name: "Kapil Birthala",
       category: "Convener",
-      fbLink:"https://facebook.com",
-      linkedinLink:"https://linkedin.com"
+      fbLink:"https://www.facebook.com/profile.php?id=100009371717274",
+      linkedinLink:"https://linkedin.com/in/kapil-birthala/"
     },
     {
-      src: require("assets/img/ryan.jpg"),
+      src: require("assets/img/aniket.jpeg"),
       altText: "Aniket Kumbhar",
       name: "Aniket Kumbhar",
       category: "Co-Convener",
-      fbLink:"https://facebook.com",
+      fbLink:"https://www.facebook.com/aniket.kumbhar.31945",
+      linkedinLink:"https://linkedin.com/in/aniket-kumbhar-2418ab151/"
+    },
+    {
+      src: require("assets/img/abhishek.jpg"),
+      altText: "Abhishek Kumar",
+      name: "Abhishek Kumar",
+      category: "Events Head",
+      fbLink:"https://www.facebook.com/kmraabhii",
       linkedinLink:"https://linkedin.com"
     },
     {
-      src: require("assets/img/ryan.jpg"),
-      altText: "Aniket Kumbhar",
-      name: "Aniket Kumbhar",
-      category: "Co-Convener",
-      fbLink:"https://facebook.com",
-      linkedinLink:"https://linkedin.com"
+      src: require("assets/img/shuvam.jpg"),
+      altText: "Shuvam Samadder",
+      name: "Shuvam Samadder",
+      category: "Alumni-Relations Head",
+      fbLink:"https://www.facebook.com/shuvam.samadder.96",
+      linkedinLink:"https://www.linkedin.com/in/shuvam-samadder-52b20214b/"
     },
     {
-      src: require("assets/img/ryan.jpg"),
-      altText: "Aniket Kumbhar",
-      name: "Aniket Kumbhar",
-      category: "Co-Convener",
-      fbLink:"https://facebook.com",
-      linkedinLink:"https://linkedin.com"
-    },
-    {
-      src: require("assets/img/eva.jpg"),
+      src: require("assets/img/abdul-square.jpg"),
       altText: "Abdulahad Khan",
       name: "Abdulahad Khan",
       category: "Techncial Head",
-      fbLink:"https://facebook.com",
+      fbLink:"https://www.facebook.com/qadbury0123456789",
+      linkedinLink:"https://www.linkedin.com/in/abdulahad-khan-profile/"
+    },
+    {
+      src: require("assets/img/sn.jpg"),
+      altText: "Surendra Nitharwal",
+      name: "Surendra Nitharwal",
+      category: "Cultural Head",
+      fbLink:"https://www.facebook.com/surendra.11052000",
       linkedinLink:"https://linkedin.com"
     },
     {
-      src: require("assets/img/ryan.jpg"),
-      altText: "Full Name",
-      name: "Full Name",
-      category: "Position Head",
-      fbLink:"https://facebook.com",
-      linkedinLink:"https://linkedin.com"
+      src: require("assets/img/default-avatar.png"),
+      altText: "Anupama Kumari",
+      name: "Anupama Kumari",
+      category: "PhD Member",
+      fbLink:"https://www.facebook.com/",
+      linkedinLink:"https://www.linkedin.com/"
+    },
+    {
+      src: require("assets/img/tushar.jpeg"),
+      altText: "Tushar Rohilla",
+      name: "Tushar Rohilla",
+      category: "Technical Executive",
+      fbLink:"https://www.facebook.com/tushar.rohilla.94",
+      linkedinLink:"https://www.linkedin.com/in/tushar-rohilla-007/"
+    },
+    {
+      src: require("assets/img/parth.jpeg"),
+      altText: "Parth Saxena",
+      name: "Parth Saxena",
+      category: "Executive Member, Alumni-Relations",
+      fbLink:"https://www.facebook.com/parth.saxena.31392",
+      linkedinLink:"https://www.linkedin.com/in/parth-saxena-621826173/"
+    },
+    {
+      src: require("assets/img/default-avatar.png"),
+      altText: "Nagendra Rajput",
+      name: "Nagendra Rajput",
+      category: "Executive Member",
+      fbLink:"https://www.facebook.com/",
+      linkedinLink:"https://www.linkedin.com/"
+    },
+    {
+      src: require("assets/img/default-avatar.png"),
+      altText: "Harshit Jain",
+      name: "Harshit Jain",
+      category: "Executive Member",
+      fbLink:"https://www.facebook.com/",
+      linkedinLink:"https://www.linkedin.com/"
     }
+    
   ];
 
   React.useEffect(() => {
@@ -102,6 +143,7 @@ function TeamPage() {
                           alt={teamMember.altText}
                           className="rounded-circle img-fluid img-raised"
                           src={teamMember.src}
+                          style={{maxWidth:"180px"}}
                         ></img>
                         <h4 className="title">{teamMember.name}</h4>
                         <p className="category text-info">{teamMember.category}</p>
@@ -109,7 +151,8 @@ function TeamPage() {
                           className="btn-icon btn-round"
                           color="info"
                           href={teamMember.fbLink}
-                          onClick={e => e.preventDefault()}
+                          target="_blank"
+                          // onClick={e => e.preventDefault()}
                         >
                           <i className="fab fa-facebook"></i>
                         </Button>
@@ -117,90 +160,22 @@ function TeamPage() {
                           className="btn-icon btn-round"
                           color="info"
                           href={teamMember.linkedinLink}
-                          onClick={e => e.preventDefault()}
+                          target="_blank"
+                          // onClick={e => e.preventDefault()}
                         >
                           <i className="fab fa-linkedin"></i>
                         </Button>
-                        {/* <Button
-                          className="btn-icon btn-round"
-                          color="info"
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
-                          <i className="fab fa-facebook-square"></i>
-                        </Button> */}
                       </div>
                     </Col>
                   );
                 })}
-                
-{/*                 
-                <Col md="4">
-                  <div className="team-player">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/ryan.jpg")}
-                    ></img>
-                    <h4 className="title">Ryan Tompson</h4>
-                    <p className="category text-info">Designer</p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-linkedin"></i>
-                    </Button>
-                  </div>
-                </Col>
-                <Col md="4">
-                  <div className="team-player">
-                    <img
-                      alt="..."
-                      className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/eva.jpg")}
-                    ></img>
-                    <h4 className="title">Eva Jenner</h4>
-                    <p className="category text-info">Fashion</p>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-google-plus"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-youtube"></i>
-                    </Button>
-                    <Button
-                      className="btn-icon btn-round"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                  </div>
-                </Col> */}
               </Row>
             </div>
           </Container>
         </div>
+{/* 
+  below comment is for Feedback form */}
+{/*         
         <div className="section section-contact-us text-center">
           <Container>
             <h2 className="title">Want to send us a message?</h2>
@@ -265,7 +240,7 @@ function TeamPage() {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
         <DarkFooter />
       </div>
     </>

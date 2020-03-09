@@ -92,6 +92,10 @@ function IndexNavbar() {
                   href="/index"
                   onClick={e => {
                     e.preventDefault();
+                    // this.Delay();
+                    // window.setTimeout(()=> {
+                    //   this.history.push('/index')
+                    // },1000)
                     document
                       .getElementById("alumni-section")
                       // setTimeout("1000")
