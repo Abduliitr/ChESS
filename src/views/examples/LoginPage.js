@@ -51,10 +51,10 @@ function LoginPage() {
                 <Form action="" className="form" method="">
                   <CardHeader className="text-center">
                     <div className="logo-container">
-                      <img
+                      {/* <img
                         alt="..."
                         src={require("assets/img/now-logo.png")}
-                      ></img>
+                      ></img> */}
                     </div>
                   </CardHeader>
                   <CardBody>

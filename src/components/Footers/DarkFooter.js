@@ -32,12 +32,15 @@ function DarkFooter() {
         <div className="copyright" id="copyright">
           © {new Date().getFullYear()}, Developed by{" "}
           <a
-            href="https://www.facebook.com/qadbury0123456789"
+            href="https://www.linkedin.com/in/abdulahad-khan-profile/"
             target="_blank"
           >
-            Abdulahad Khan
+            Abdulahad Khan {" "}
+            <img
+                alt="..."
+                src={require("assets/img/flags/IN.png")}
+            ></img>
           </a>
-          .
         </div>
       </Container>
     </footer>
