@@ -33,7 +33,7 @@ function TeamPage() {
       linkedinLink:"https://linkedin.com"
     },
     {
-      src: require("assets/img/ryan.jpg"),
+      src: require("assets/img/disha.jpeg"),
       altText: "Aniket Kumbhar",
       name: "Aniket Kumbhar",
       category: "Co-Convener",
