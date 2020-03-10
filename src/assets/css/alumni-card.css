@@ -4,6 +4,9 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 *:hover{
     -webkit-transition: all 1s ease;
     transition: all 1s ease;

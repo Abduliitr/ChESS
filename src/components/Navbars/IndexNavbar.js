@@ -57,9 +57,20 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="/index"
-              // target="_blank"
               id="navbar-brand"
+              className="page-scroll"
+              href="/index"
+              onClick={e => {
+                e.preventDefault();
+                // this.Delay();
+                // window.setTimeout(()=> {
+                //   this.history.push('/index')
+                // },1000)
+                document
+                  .getElementById("main-head")
+                  // setTimeout("1000")
+                  .scrollIntoView();
+              }}
             >
               ChESS IIT ROORKEE
             </NavbarBrand>
@@ -155,21 +166,6 @@ function IndexNavbar() {
               <NavItem>
                 <NavLink 
                   className="page-scroll"
-                  href="/team-page"
-                  // onClick={e => {
-                  //   e.preventDefault();
-                  //   document
-                  //     .getElementById("download-section")
-                  //     .scrollIntoView();
-                  // }}
-                >
-                  <i className="now-ui-icons design_bullet-list-67"></i>
-                  <p>Team</p>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink 
-                  className="page-scroll"
                   href="#pablo"
                   onClick={e => {
                     e.preventDefault();
@@ -180,6 +176,21 @@ function IndexNavbar() {
                 >
                   <i className="now-ui-icons arrows-1_cloud-download-93"></i>
                   <p>Reach-Us</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink 
+                  className="page-scroll"
+                  href="/team-page"
+                  // onClick={e => {
+                  //   e.preventDefault();
+                  //   document
+                  //     .getElementById("download-section")
+                  //     .scrollIntoView();
+                  // }}
+                >
+                  <i className="now-ui-icons design_bullet-list-67"></i>
+                  <p>Team</p>
                 </NavLink>
               </NavItem>
               

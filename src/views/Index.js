@@ -26,6 +26,7 @@ import Tabs from "./index-sections/Tabs.js";
 import CompleteExamples from "./index-sections/CompleteExamples.js";
 // import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
+// import Department from "./index-sections/Department.js";
 import Download from "./index-sections/Download.js";
 
 function Index() {
@@ -62,6 +63,7 @@ function Index() {
           <CompleteExamples />
           {/* <SignUp /> */}
           <Examples />
+          {/* <Department /> */}
           <Download /> 
           {/* using Download for footers */}
         </div>
