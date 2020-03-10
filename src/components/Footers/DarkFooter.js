@@ -32,7 +32,8 @@ function DarkFooter() {
         <div className="copyright" id="copyright">
           © {new Date().getFullYear()}, Developed by{" "}
           <a
-            href="https://www.linkedin.com/in/abdulahad-khan-profile/"
+            // href="https://www.linkedin.com/in/abdulahad-khan-profile/"
+            href="/profile-page"
             target="_blank"
           >
             Abdulahad Khan {" "}

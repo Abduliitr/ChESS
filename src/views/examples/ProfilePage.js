@@ -17,7 +17,7 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
 
 function ProfilePage() {
   const [pills, setPills] = React.useState("2");
@@ -46,6 +46,8 @@ function ProfilePage() {
                 color="default"
                 id="tooltip515203352"
                 size="lg"
+                href="https://twitter.com/Abdulah78723029"
+                target="_blank"
               >
                 <i className="fab fa-twitter"></i>
               </Button>
@@ -57,6 +59,8 @@ function ProfilePage() {
                 color="default"
                 id="tooltip340339231"
                 size="lg"
+                href="https://www.instagram.com/abdulahad_1318/"
+                target="_blank"
               >
                 <i className="fab fa-instagram"></i>
               </Button>
@@ -65,12 +69,28 @@ function ProfilePage() {
               </UncontrolledTooltip>
             </div>
             <h3 className="title">About me</h3>
-            <h5 className="description">
-              An artist of considerable range, Ryan — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure. An artist of considerable range.
-            </h5>
+            
+            <Row>
+              <Col lg="6" sm="12">
+                <h5 className="description">
+                An artist of considerable range, Abdulahad — the name taken by
+                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
+                and records all of his own music, giving it a warm, intimate feel
+                with a solid groove structure. An artist of considerable range.
+                </h5>
+              </Col>
+              <Col lg="6" sm="12">
+                <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                <iframe src="https://snapwidget.com/embed/800066" 
+                  className="snapwidget-widget" 
+                  allowtransparency="true" 
+                  frameborder="0" 
+                  scrolling="yes" 
+                  style={{border:"none", overflow:"hidden",  width:"100%", height:"120%"}}></iframe>  
+              </Col>
+            </Row>
+            
+
             <Row>
               <Col className="ml-auto mr-auto" md="6">
                 <h4 className="title text-center">My Portfolio</h4>
@@ -214,7 +234,7 @@ function ProfilePage() {
             </Row>
           </Container>
         </div>
-        <DefaultFooter />
+        <DarkFooter />
       </div>
     </>
   );

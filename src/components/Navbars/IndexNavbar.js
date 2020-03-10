@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import {
   Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
+  // UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -72,6 +72,8 @@ function IndexNavbar() {
                   .scrollIntoView();
               }}
             >
+              <img src={require('assets/img/chess-logo.png')} style={{borderRadius:'50%'}} width="30" height="30" alt="" />
+              {"  "}{" "}
               ChESS IIT ROORKEE
             </NavbarBrand>
             {/* <UncontrolledTooltip target="#navbar-brand">

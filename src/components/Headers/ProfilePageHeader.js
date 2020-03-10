@@ -35,11 +35,11 @@ function ProfilePageHeader() {
           ref={pageHeader}
         ></div>
         <Container>
-          <div className="photo-container">
-            <img alt="..." src={require("assets/img/ryan.jpg")}></img>
+          <div className="photo-container" style={{boxShadow:"2px 2px 3px 3px white"}}>
+            <img alt="..." src={require("assets/img/abdul-square.jpg")}></img>
           </div>
-          <h3 className="title">Sanam Khurana</h3>
-          <p className="category">PhD Scholar</p>
+          <h3 className="title">Abdulahad Khan</h3>
+          <p className="category">Web Developer</p>
           <div className="content">
             <div className="social-description">
               <h2>26</h2>
