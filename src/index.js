@@ -34,7 +34,7 @@ import ProfilePage from "views/examples/ProfilePage.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Switch>
+      {/* <Switch> */}
         <Route path="/index" render={props => <Index {...props} />} />
         <Route
           path="/nucleo-icons"
@@ -51,7 +51,7 @@ ReactDOM.render(
         <Route path="/login-page" render={props => <LoginPage {...props} />} />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
-      </Switch>
+      {/* </Switch> */}
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

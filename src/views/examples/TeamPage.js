@@ -65,6 +65,14 @@ function TeamPage() {
       linkedinLink:"https://www.linkedin.com/in/abdulahad-khan-profile/"
     },
     {
+      src: require("assets/img/Vinu.jpeg"),
+      altText: "Vinay Kumar Goyal",
+      name: "Vinay Kumar Goyal",
+      category: "Web Developer",
+      fbLink:"https://www.facebook.com/profile.php?id=100006934575869",
+      linkedinLink:"https://www.linkedin.com/in/vinay-kumar-goyal-002809179/"
+    },
+    {
       src: require("assets/img/sn.jpg"),
       altText: "Surendra Nitharwal",
       name: "Surendra Nitharwal",
