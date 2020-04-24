@@ -16,10 +16,16 @@ import {
   Container,
   UncontrolledTooltip
 } from "reactstrap";
+import Hscroll from "components/Hscroll";
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
+
+  // React.useEffect(() => {
+    
+  // })
+
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
@@ -38,6 +44,7 @@ function IndexNavbar() {
     return function cleanup() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
+
   });
   return (
     <>
@@ -238,7 +245,9 @@ function IndexNavbar() {
             </Nav>
           </Collapse>
         </Container>
+        
       </Navbar>
+      <Hscroll />
     </>
   );
 }

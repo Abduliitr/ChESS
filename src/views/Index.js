@@ -28,6 +28,10 @@ import CompleteExamples from "./index-sections/CompleteExamples.js";
 import Examples from "./index-sections/Examples.js";
 // import Department from "./index-sections/Department.js";
 import Download from "./index-sections/Download.js";
+import Hscroll from "components/Hscroll.js";
+
+
+
 
 function Index() {
   React.useEffect(() => {
@@ -46,6 +50,7 @@ function Index() {
       <IndexNavbar />
       <div className="wrapper">
         <IndexHeader />
+        <Hscroll />
         <div className="main">
           {/* <Images /> */}
           <Alumni />

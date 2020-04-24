@@ -30,6 +30,7 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
 import TeamPage from "views/examples/TeamPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import './index.css'
 
 ReactDOM.render(
   <BrowserRouter>
