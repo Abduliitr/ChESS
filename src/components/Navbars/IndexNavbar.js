@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // reactstrap components
 import {
-  Button,
+  // Button,
   Collapse,
   // DropdownToggle,
   // DropdownMenu,
@@ -13,8 +13,8 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container,
-  UncontrolledTooltip
+  Container
+  // UncontrolledTooltip
 } from "reactstrap";
 import Hscroll from "components/Hscroll";
 

@@ -1,6 +1,6 @@
 // import React from 'react'
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import "./../../assets/css/alumni-card.css"
 
 class Alumni extends Component {

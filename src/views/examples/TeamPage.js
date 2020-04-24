@@ -3,24 +3,24 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
+  // Input,
+  // InputGroupAddon,
+  // InputGroupText,
+  // InputGroup,
   Container,
   Row,
   Col
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+// import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import TeamPageHeader from "components/Headers/TeamPageHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import IndexNavbar from "components/Navbars/IndexNavbar";
 
 function TeamPage() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
+  // const [firstFocus, setFirstFocus] = React.useState(false);
+  // const [lastFocus, setLastFocus] = React.useState(false);
 
   // write the const for the team details here...
   const teamMembers = [
